@@ -6,5 +6,6 @@ do
    #set up $BASE_URL_OF_BOT var in heroku
    wget -q -O/dev/null $BASE_URL_OF_BOT
    #can be
-   #curl --silent --output /var/log/keep-alive.txt -L $BASE_URL_OF_BOT 
+   #host="https://$BASE_URL_OF_BOT"
+   #curl --silent --output /var/log/keep-alive.txt -L $host 
 done
