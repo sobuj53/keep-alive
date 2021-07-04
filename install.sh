@@ -6,7 +6,7 @@ mkdir -p /etc/cron.custom
 
 # Downloading keep-alive.sh and save it into /etc/cron.custom directory
 echo "Downloading file 'keep-alive.sh' into /etc/cron.custom"
-curl --silent --output /etc/cron.custom/keep-alive.sh https://raw.github.com/danielpuglisi/keep-alive/master/keep-alive.sh
+curl --silent --output /etc/cron.custom/keep-alive.sh https://raw.githubusercontent.com/sobuj53/keep-alive/master/keep-alive.sh
 
 # Add cronjob to the crontab file
 echo "Adding cronjob to /etc/crontab"
