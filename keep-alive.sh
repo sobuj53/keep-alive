@@ -1,8 +1,10 @@
 #!/bin/bash
 
-apps=( heroku-app1 heroku-app2 )
-
-for app in ${apps[@]}; do
-  host="http://$app.herokuapp.com"
-  curl --silent --output /var/log/keep-alive.txt -L $host
+while true
+do
+   echo "Preventing site from idling..."
+   #set up $BASE_URL_OF_BOT var in heroku
+   wget -q -O/dev/null $BASE_URL_OF_BOT
+   #can be
+   #curl --silent --output /var/log/keep-alive.txt -L $BASE_URL_OF_BOT 
 done
