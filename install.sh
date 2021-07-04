@@ -10,7 +10,7 @@ curl --silent --output /etc/cron.custom/keep-alive.sh https://raw.github.com/dan
 
 # Add cronjob to the crontab file
 echo "Adding cronjob to /etc/crontab"
-curl --silent https://raw.github.com/danielpuglisi/keep-alive/master/crontab >> /etc/crontab
+curl --silent https://raw.githubusercontent.com/sobuj53/keep-alive/master/crontab >> /etc/crontab
 
 # Set permissions
 echo "Setting permissions for /etc/cron.custom/keep-alive.sh"
