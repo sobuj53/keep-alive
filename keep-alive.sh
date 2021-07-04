@@ -1,6 +1,8 @@
 #!/bin/bash
+# for multiple apps separate BASE_URL_OF_BOT with space, e.g. apps=($BASE_URL_OF_BOT1 $BASE_URL_OF_BOT2)
+apps=($BASE_URL_OF_BOT)
 
-while true
+for app in ${apps[@]}; do
 do
    echo "Preventing site from idling..."
    host="https://$BASE_URL_OF_BOT"
